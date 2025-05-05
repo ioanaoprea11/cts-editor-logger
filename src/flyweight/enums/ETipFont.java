@@ -1,4 +1,4 @@
-package flyweight.models;
+package flyweight.enums;
 
 public enum ETipFont {
     REGULAR,

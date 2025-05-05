@@ -1,5 +1,6 @@
 package flyweight.models;
 
+import flyweight.enums.ETipFont;
 import flyweight.interfaces.IStilCaracter;
 
 public class StilCaracter implements IStilCaracter {

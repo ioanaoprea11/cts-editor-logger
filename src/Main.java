@@ -5,7 +5,7 @@ import decorator.models.LevelLogger;
 import decorator.models.ThreadIdLogger;
 import decorator.models.TimestampLogger;
 import flyweight.models.Caracter;
-import flyweight.models.ETipFont;
+import flyweight.enums.ETipFont;
 import flyweight.models.StilCaracter;
 import flyweight.models.StilCaracterFactory;
 
@@ -13,6 +13,7 @@ public class Main {
     //Au fost create 3 caractere, două dintre ele având același stil
     //Stilul celui de al doilea caracter nu a fost creat din nou
     public static void main(String[] args) {
+        System.out.println("Implementare Flyweight:\n");
         StilCaracter stil1 = StilCaracterFactory.getStil("Arial", 12, ETipFont.BOLD, "negru");
         stil1.afiseaza(new Caracter('A', 0));
 
@@ -26,7 +27,7 @@ public class Main {
         System.out.println("Total cereri stiluri (inclusiv duplicate): " + StilCaracterFactory.getNrStiluriCerute());
 
 
-        System.out.println("\n\n\n");
+        System.out.println("\nImplementare Decorator:\n");
 
         ILogger basicLogger = new BasicLogger();
         basicLogger.log("Conexiune esuata!");

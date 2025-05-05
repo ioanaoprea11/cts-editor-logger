@@ -1,5 +1,7 @@
 package flyweight.models;
 
+import flyweight.enums.ETipFont;
+
 import java.util.HashMap;
 import java.util.Map;
 
