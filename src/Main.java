@@ -25,7 +25,7 @@ public class Main {
         System.out.println("\nTotal stiluri create (unice): " + StilCaracterFactory.getNrStiluriCreate());
         System.out.println("Total cereri stiluri (inclusiv duplicate): " + StilCaracterFactory.getNrStiluriCerute());
 
-        //================ DECORATOR ============
+
         System.out.println("\n\n\n");
 
         ILogger basicLogger = new BasicLogger();
@@ -48,8 +48,6 @@ public class Main {
                 )
         );
         logger2.log("Eroare la salvarea datelor.");
-
-//-------------------------------------------------------------------------------
 
     }
 }
